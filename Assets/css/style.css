@@ -1,0 +1,17 @@
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+
+nav {
+    background-color: linear-gradient( bottom , #201E1C,#F7931A) ;
+    width: 100px;
+    height: 100px;
+}
+section {
+    background-color: #201E1C;
+    border: 4px blue solid;
+    width: 400px;
+    height: 500px;
+}
