@@ -159,10 +159,11 @@ nav {
 }
 .card__div{
     position: absolute;
-    top: -15%;
+    top: -9%;
     background-color: var(--Bitcoin-Orange);
     color: var(--Just-White);
-    padding: 16px 8px;
+    padding: 8px;
+    font-size: 1.75rem;
     border-radius: 8px;
 }
 table{
