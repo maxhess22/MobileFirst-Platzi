@@ -1,16 +1,21 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia 
+    4. Visuales
+    5. Otros
+*/
 
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
+/* 
+     Apuntes:
+     font : font 62.5%
+     bem:
+     
+     * El nombre del bloque describe su propósito ("¿Qué es?", menuo button), no su estado ("¿Qué aspecto tiene?", redo big).
+     
+     * Tampoco debe usar etiquetas o IDselectores CSS cuando use BEM.
 
-    Font-size: 16px;
-    Line-height: 18px;
-    Line-height: 98.75%;
-}
-
+*/
 
 :root {
     --Bitcoin-Orange: #F7931A;
@@ -26,38 +31,61 @@
 
 }
 
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Font-size: 62.5%;
+    Line-height: 18px;
+    Line-height: 98.75%;
+}
 body {
     background-color: var(--Off-White);
 }
 
-.title1{
+header div {
+    background-image: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%) ;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 19px 32px 19px;
+    width: 100%;
+    height: 50vh; 
+}
+
+.header__title{
     color: white;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
 }
-.param1 {
+.header__text{
     color: #FFE9D4;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
     text-align: center;
 }
-.title2{
+.seccion-1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    margin: 64px 14px;
+
+}
+.secction-1__title{
     color: var(--Warm-Black);
     margin: 24px 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 26px;
     text-align: center;
     
 }
@@ -69,10 +97,11 @@ body {
     color: var(--Off-White);
     padding: 16px 0;
 }
-.param2{
+.secction-1__text{
     color: #757575;
     text-align: start;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .param2__secction2 {
     padding: 16px 0;
@@ -81,42 +110,25 @@ body {
     font-size: 0.9rem;
 }
 
-.button {
-    color: #201E1C;
+.button--header {
+    color: var(--Warm-Black);
     border-radius: 4px;
     padding: 15px;
     position: absolute;
     bottom: -5%;
     background-color: #FAF8F7;
     box-shadow: var(--Shadow);
+    font-size: 1.4rem;
+    font-weight: 700;
 }
-nav {
-    background-image: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%) ;
-    position: relative;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 19px 16px 19px;
-    width: 100%;
-    height: 50vh;
-   
-}
-.seccion__1 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    gap: 16px;
-    align-items: center;
-    margin: 64px 14px;
 
-}
+
 .secction__2{
     background-color: var(--Warm-Black);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding: 64px 14px;
+    padding: 64px 16px;
 }
 .secction__2__div{
     display: flex;
@@ -149,7 +161,7 @@ nav {
 .precio {
     font-size: 3.35rem;
 }
-.button__card {
+.card__button {
     background-color: var(--Just-White);
     border: 2px solid var(--Bitcoin-Orange);
     font-size: 0.9rem;
@@ -157,13 +169,13 @@ nav {
     border-radius: 4px;
     width: 100%;
 }
-.card__div{
+.card-container{
     position: absolute;
     top: -9%;
     background-color: var(--Bitcoin-Orange);
     color: var(--Just-White);
     padding: 8px;
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     border-radius: 8px;
 }
 table{
@@ -177,5 +189,26 @@ table{
     box-shadow: var(--Shadow);
 
 }
-
+footer {
+    background-color: var(--Bitcoin-Orange);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--Just-White);
+}
+footer a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
 
