@@ -28,6 +28,7 @@
     --Off-White: #FAF8F7;
     --Just-White: #FFFFFF;
     --Shadow: 0 4px 8px 0 #59491E29;
+    --text:#757575;
 
 }
 
@@ -89,14 +90,13 @@ header div {
     text-align: center;
     
 }
-.title3 {
+.secction-1__table-title {
     color: #FF9536;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23px;
 }
-.title__secction__div {
-    font-size: 1.1rem;
-    color: var(--Off-White);
-    padding: 16px 0;
-}
+
 .secction-1__text{
     color: #757575;
     text-align: start;
@@ -123,14 +123,21 @@ header div {
 }
 
 
-.secction__2{
+.secction-2{
     background-color: var(--Warm-Black);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     padding: 64px 16px;
+    gap: 16px;
 }
-.secction__2__div{
+.secction-2__title {
+    font-size: 2.4rem;
+    color: var(--Just-White);
+    font-weight: 700;
+    line-height: 26px;
+}
+.secction-2__card{
     display: flex;
     flex-flow: column wrap;
     align-items:flex-start;
@@ -139,13 +146,33 @@ header div {
     margin:  14px;
     padding: 16px 32px;
     height: 100%;
+    gap: 16px;
 }
-.secction__3 {
+.secction-2__card-title {
+    font-size: 1.8rem;
+    color: var(--Just-White);
+    font-weight: 700;
+    line-height: 18px;
+}
+.secction-2__card-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--Grey);
+}
+.secction-3 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     padding: 16px;
     gap: 32px;
+}
+.seccion-3__title {
+    font-size: 2.4rem;
+    color: var(--Warm-Black);
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
 }
 .card {
     position: relative;
@@ -178,17 +205,7 @@ header div {
     font-size: 1.2rem;
     border-radius: 8px;
 }
-table{
-    
-    width: 55%;
-    background-color: #ffffff;
-    border-radius: 8px;
-    table-layout: fixed;
-    border-collapse: separate var(--Grey);
-    border-spacing: 20px;
-    box-shadow: var(--Shadow);
 
-}
 footer {
     background-color: var(--Bitcoin-Orange);
     width: 100%;
@@ -211,4 +228,13 @@ footer a{
     text-decoration: none;
     color: white;
 }
-
+.table {
+    box-shadow: var(--Shadow);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--Grey);
+    table-layout: fixed;
+    width: 55%;
+    height: 100%;
+}
