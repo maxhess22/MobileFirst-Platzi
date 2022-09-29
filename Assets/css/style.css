@@ -136,6 +136,7 @@ header div {
     color: var(--Just-White);
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
 }
 .secction-2__card{
     display: flex;
@@ -167,6 +168,12 @@ header div {
     padding: 16px;
     gap: 32px;
 }
+.seccion-3__cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
+    justify-content: center;
+}
 .seccion-3__title {
     font-size: 2.4rem;
     color: var(--Warm-Black);
@@ -174,24 +181,44 @@ header div {
     line-height: 26px;
     text-align: center;
 }
+.seccion-3__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 18px;
+}
 .card {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: var(--Shadow);
-    padding: 16px 32px;
+    padding: 16px 8px;
     border-radius: 8px;
     gap: 16px;
-    width: 55%;
+    width: 190px;
+}
+.card__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--Warm-black-1);
+}
+.card__text {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--Grey);
 }
 .precio {
     font-size: 3.35rem;
+    display: inline;
 }
 .card__button {
     background-color: var(--Just-White);
     border: 2px solid var(--Bitcoin-Orange);
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     padding: 8px 16px;
     border-radius: 4px;
     width: 100%;
@@ -200,10 +227,15 @@ header div {
     position: absolute;
     top: -9%;
     background-color: var(--Bitcoin-Orange);
-    color: var(--Just-White);
+    color: var(--Off-White);
     padding: 8px;
-    font-size: 1.2rem;
     border-radius: 8px;
+}
+.card-container__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--Just-White);
+    text-align: center;
 }
 
 footer {
@@ -237,4 +269,44 @@ footer a{
     table-layout: fixed;
     width: 55%;
     height: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--Grey);
+    text-align: center;
+    padding: 8px ;
+}
+p{
+    display: inline;
+    font-size: 1.4rem;
+    
+}
+@media screen and (min-width: 576px) {
+    
+    
+    .secction-2__card {
+        width: 40%;
+    }
+    .card {
+        width: 20%;
+    }
+    
+    .table {
+        width: 20%;
+    }
+    .secction-2__cards {
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr;
+        grid-template-rows: 0.8fr 0.8fr;
+        gap: 16px;
+        justify-items: center;
+        align-items: center;
+    }
+    .secction-2__card{
+        width: 100%;
+    }
 }

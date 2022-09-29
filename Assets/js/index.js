@@ -1,8 +1,4 @@
+let prom_1 = document.getElementById("card-1");
+let prom_2 = document.getElementById("card-2");
+let prom_3 = document.getElementById("card-3");
 
-const fecha = new Date();
-
-var dia = fecha.getDate();
-var mes = fecha.getMonth();
-var year = fecha.getFullYear()
-
-console.log(`èl dia de hoy es ${dia} el mes es : ${mes} y el año es ${year}` )
