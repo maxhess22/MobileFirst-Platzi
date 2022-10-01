@@ -271,6 +271,7 @@ header div {
 }
 .button-slide {
     background-color: var(--Off-White);
+    width: 90px;
 }
 
 footer {
