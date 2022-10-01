@@ -6,14 +6,8 @@ let buttonBefore = document.querySelector("#retroceder");
 var valorCard = 2;
 
 
-
-
 buttonAfter.addEventListener('click', avanzar);
 buttonBefore.addEventListener('click', retroceder);
-
-
-
-
 
 
 
@@ -51,17 +45,6 @@ function avanzar (){
             break;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 function retroceder (){  
