@@ -81,9 +81,9 @@ header div {
     font-weight: 500;
     text-align: center;
 }
-.seccion-1 {
+.secction-1 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     gap: 16px;
     align-items: center;
@@ -248,12 +248,19 @@ header div {
     display: inline;
 }
 .card__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     background-color: var(--Just-White);
     border: 2px solid var(--Bitcoin-Orange);
     font-size: 1.4rem;
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 4px;
-    width: 100%;
+    width: 80%;
+}
+.flecha_boton{
+
 }
 .card-container{
     position: absolute;
@@ -271,7 +278,7 @@ header div {
 }
 .button-slide {
     background-color: var(--Off-White);
-    width: 90px;
+    
 }
 
 footer {
@@ -305,7 +312,8 @@ footer a{
     table-layout: fixed;
     width: 55%;
     height: 100%;
-    border-collapse: collapse;
+    border-collapse:separate;
+    
 }
 
 td {
@@ -314,7 +322,7 @@ td {
     line-height: 19px;
     color: var(--Grey);
     text-align: center;
-    padding: 8px ;
+    padding: 16px ;
 }
 p{
     display: inline;
