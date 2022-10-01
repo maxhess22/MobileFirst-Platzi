@@ -1,0 +1,73 @@
+    
+    
+    
+    
+    
+    
+    .header__title {
+        font-size: 4rem;
+        line-height: 42px;
+    }
+    .header__text {
+        font-size: 2rem;
+        line-height: 24px;
+    }
+    .secction-1__title {
+        font-size: 4rem;
+        line-height: 42px;
+    }
+    .secction-1__text {
+        font-size: 2rem;
+        line-height: 24px;
+    }
+    .secction-1__tablas {
+        display: flex;
+        flex-flow: row  nowrap;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .table {
+        
+        width: 50%;
+    }
+    .secction-2__card {
+        width: 40%;
+    }
+    .card {
+        min-width: 223px;
+    }
+    
+
+    .secction-2__cards {
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr;
+        grid-template-rows: 0.8fr 0.8fr;
+        gap: 16px;
+        justify-items: center;
+        align-items: center;
+    }
+    .secction-2__card{
+        width: 100%;
+    }
+    .seccion-3__cards{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 16px;
+        gap: 32px;
+    }
+    #card-1{
+       opacity: 1;
+    }
+    #card-2{
+        opacity: 1;
+    }
+    #card-3{
+        opacity: 1;
+    }
+    .button-slide {
+        display: none;
+    } 
