@@ -24,6 +24,7 @@
     .secction-1__tablas {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         row-gap:  64px;
