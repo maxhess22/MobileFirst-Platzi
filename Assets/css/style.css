@@ -87,7 +87,7 @@ header div {
     justify-content: center;
     gap: 16px;
     align-items: center;
-    margin: 64px 14px;
+    margin: 48px 14px;
 
 }
 .secction-1__title{
@@ -338,7 +338,7 @@ footer a{
     justify-content: center;
     align-items: center;
     padding: 16px;
-    gap: 32px;   
+    gap: 16px;   
 }
 .secction-1__tabla {
     display: flex;
