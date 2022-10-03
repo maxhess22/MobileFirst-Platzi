@@ -315,8 +315,24 @@ footer a{
     border-collapse:separate;
     
 }
+.secction-1__tabla-informacion {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 50%;
+    color: var(--Warm-Black);
+    background-color: var(--Soft-Orange);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+
+
+}
 
 td {
+
+   
+  
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 19px;
