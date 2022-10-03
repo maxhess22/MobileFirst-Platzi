@@ -35,7 +35,6 @@ function avanzar (){
             prom_3.style.display = 'none';
             prom_2.style.animationName = 'opacitys';
             prom_2.style.opacity = 1;
-            prom_1.style.
             break;
         case 3:
             prom_1.style.display = 'none';
